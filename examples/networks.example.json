@@ -1,0 +1,8 @@
+{
+  "networks": [
+    {"cidr": "198.51.100.0/24", "org": "Example VPN Ltd", "asn": 64500, "kind": "vpn"},
+    {"cidr": "203.0.113.0/24", "org": "Example Cable Broadband", "asn": 64501, "kind": "residential"},
+    {"cidr": "192.0.2.0/24", "org": "Example State University", "asn": 64502, "kind": "institution"},
+    {"cidr": "198.19.0.0/16", "org": "Example Cloud Hosting", "asn": 64503, "kind": "hosting"}
+  ]
+}
