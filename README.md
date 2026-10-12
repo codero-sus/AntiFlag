@@ -84,6 +84,21 @@ from your own IP intelligence source. See `examples/networks.example.json`:
 is omitted, the kind is inferred from `org` by keyword. Keyword matches are less
 certain than curated entries, so they receive lower confidence.
 
+## Keeping up to date
+
+Three updaters pull the latest commits for whichever branch you have checked out.
+They never switch branches, and they only fast-forward:
+
+```bash
+python3 updaters.py      # Linux, macOS, Windows
+./updaters.sh            # Linux, macOS
+updaters.bat             # Windows
+```
+
+Add `--test` to run the unit tests afterwards. Add `--allow-dirty` to update even
+with local edits. Without it, a dirty tree, a detached HEAD, or diverged history
+stops the update and leaves everything unchanged.
+
 ## Development
 
 ```bash
